@@ -1,0 +1,214 @@
+.hero__wrapper-main {
+}
+.hero {
+    text-align: center;
+    padding: 15rem 0 5rem;
+}
+.hero .title {
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+.hero__span {
+    color: var(--fourth-brand-color);
+    display: block;
+    position: relative;
+    font-family: var(--title-font);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    width: fit-content;
+    margin: 0 auto .5rem;
+    background-color: var(--main-bg-color);
+    padding: 0 .5rem;
+}
+.hero__span::before {
+    background-color: var(--fourth-brand-color);
+    display: block;
+    position: absolute;
+    content: '';
+    width: 250%;
+    height: .2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+.hero .text {
+    margin: 0 auto 2rem;
+    max-width: 35rem;
+}
+.hero__block {
+    margin-bottom: 3rem;
+}
+
+
+
+
+.contacts {
+    padding: 15rem 0;
+    text-align: center;
+}
+.contacts .sub-title {
+    margin-bottom: 10rem;
+}
+.contacts__item:not(:last-child) {
+    margin-bottom: 10rem;
+}
+.contacts__list {
+    max-width: 60rem;
+    width: 80%;
+    margin: 0 auto;
+}
+.contacts__item {
+    position: relative;
+    padding: 8rem 2rem 3rem;
+    border-radius: 2rem;
+}
+.contacts__item:nth-child(1) {
+    background-color: rgba(45, 35, 108, .3);
+    background-color: rgba(255, 60, 0, .2);
+}
+.contacts__item:nth-child(2) {
+    background-color: rgba(255, 195, 0, .2);
+}
+.contacts__item:nth-child(3) {
+    background-color: rgba(45, 35, 108, .2);
+}
+.contacts__icon-box {
+    background-color: var(--main-bg-color);
+    border-radius: 2rem;
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: -5rem;
+    transform: translate(-50%, 0);
+
+    -webkit-box-shadow: 0rem 0rem 4.5rem 0rem rgba(0,0,0,0.31);
+    -moz-box-shadow: 0rem 0rem 4.5rem 0rem rgba(0,0,0,0.31);
+    box-shadow: 0rem 0rem 4.5rem 0rem rgba(0,0,0,0.31);
+}
+.contacts__icon {
+    display: block;
+    width: 6rem;
+    height: 6rem;
+}
+
+
+
+
+
+.policy {
+    padding: 15rem 0;
+    text-align: center;
+}
+.policy .sub-title {
+    margin-bottom: 10rem;
+}
+.policy__item:not(:last-child) {
+    margin-bottom: 8rem;
+}
+.policy__title {
+    font-family: var(--title-font);
+    font-size: 2rem;
+}
+.policy__block {
+    max-width: 50rem;
+    margin: 0 auto;
+}
+.policy__item .text {
+    margin-bottom: 3rem;
+}
+.policy__btn {
+    font-family: var(--title-font);
+    font-size: 1.6rem;
+    text-transform: lowercase;
+    color: var(--third-brand-color);
+    border-bottom: .2rem solid var(--third-brand-color);
+    transition: all .3s ease-in-out;
+}
+.policy__img {
+    display: none;
+}
+
+@media screen and (min-width: 1440px)  {
+    
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5rem 0;
+        text-align: left;
+    }
+    .hero__block {
+        margin-bottom: 0;
+    }
+    .hero .text {
+        margin-left: 0;
+    }
+    .hero .img {
+        margin: 0;
+        max-width: 50%;
+        width: 50%;
+    }
+    .hero__span {
+        margin: 0 0 .5rem 6rem;
+        padding: 0;
+    }
+    .hero__span::before {
+        width: 5rem;
+        left: -6rem;
+        transform: translate(0, -50%);
+    }
+
+
+
+    .contacts {
+        padding: 15rem 10rem;
+        text-align: left;
+    }
+    .contacts__box {
+        display: flex;
+        justify-content: space-around;
+    }
+    .contacts .sub-title {
+        margin-bottom: 0;
+    }
+    .contacts__list {
+        display: flex;
+        flex-direction: column;
+    }
+    .contacts__item:not(:last-child) {
+        margin-bottom: 5rem;
+    }
+    .contacts__list {
+        max-width: 100%;
+        width: 100%;
+        margin: 0;
+    }
+    .contacts__item {
+        padding: 5rem 4rem 5rem 14rem;
+    }
+    .contacts__icon-box {
+        left: 2rem;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+
+
+    .policy {
+        padding: 15rem 10rem;
+        text-align: left;
+    }
+    .policy__box {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .policy__img {
+        display: block;
+        width: 50%;
+    }
+}
