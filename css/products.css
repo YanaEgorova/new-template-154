@@ -163,7 +163,6 @@
     }
     .swiper__box {
         display: flex;
-        align-items: center;
     }
     .products__sub-box {
         text-align: left;
@@ -172,6 +171,9 @@
     .swiper__img {
         display: block;
         width: 45%;
+        min-height: 100%;
+        flex-grow: 1;
+        border: 7rem solid var(--third-brand-color);
     }
     .swiper-button-next,
     .swiper-button-prev {

@@ -205,10 +205,12 @@
     .policy__box {
         display: flex;
         flex-direction: row-reverse;
-        align-items: center;
     }
     .policy__img {
         display: block;
         width: 50%;
+        flex-grow: 1;
+        min-height: 100%;
+        border: 7rem solid var(--second-brand-color);
     }
 }
