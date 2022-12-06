@@ -64,14 +64,13 @@
     border-radius: 2rem;
 }
 .contacts__item:nth-child(1) {
-    background-color: rgba(45, 35, 108, .3);
-    background-color: rgba(255, 60, 0, .2);
+    background-image: linear-gradient(to right, var(--fourth-brand-color), var(--fifth-brand-color));
 }
 .contacts__item:nth-child(2) {
-    background-color: rgba(255, 195, 0, .2);
+    background-image: linear-gradient(to right, var(--fifth-brand-color), var(--fourth-brand-color));
 }
 .contacts__item:nth-child(3) {
-    background-color: rgba(45, 35, 108, .2);
+    background-image: linear-gradient(to right, var(--fourth-brand-color), var(--fifth-brand-color));
 }
 .contacts__icon-box {
     background-color: var(--main-bg-color);
